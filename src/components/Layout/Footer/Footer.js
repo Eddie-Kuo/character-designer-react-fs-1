@@ -3,6 +3,8 @@ import './Footer.css';
 
 export default function Footer() {
   return (
-    <Footer>Footer</Footer>
+    <footer>
+      <p>Alchemy Code Lab July 2022 Cohort</p>
+    </footer>
   );
 }

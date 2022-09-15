@@ -3,6 +3,6 @@ import './Main.css';
 
 export default function Main() {
   return (
-    <Main>Hello</Main>
+    <main>Hello</main>
   );
 }

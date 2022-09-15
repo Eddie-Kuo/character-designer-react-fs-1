@@ -3,6 +3,6 @@ import './Header.css';
 
 export default function Header() {
   return (
-    <Header>Header</Header>
+    <header>Character Designer with React</header>
   );
 }
