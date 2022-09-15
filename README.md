@@ -51,3 +51,18 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 ## Additional considerations
 - Is any of your state redundant? For example, if you're tracking `wins`, `losses`, and `total`, you can probably get rid of `losses` state, and calculate it as `total - wins`.
 - Where should each piece of state live? How are you going to get data from where it lives to where it needs to be?
+
+<!-- 1. Build out Character Changes
+   - Main component with state values for head, middle, and bottom
+   - Character Component with image names based on state values
+   - Controls Component with drop downs to change the state
+   - Ideally build each piece one at a time
+2. Build out the counters
+   - Add your Stats component
+   - Add your state variables in Main for tracking the counters
+   - Pass the state setter down to Controls
+   - Pass the state variables to Stats
+3. Catchphrases
+   - Add state variable to Main for tracking the catchphrases
+   - Add display of state variables to the Stats component
+   - Pass catchphrase state setter to Catchphrase component to update state when button is clicked -->
