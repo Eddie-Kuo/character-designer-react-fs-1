@@ -1,0 +1,14 @@
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls * {
+    margin: 5px;
+}
+
+.controls select {
+    width: 200px;
+}
