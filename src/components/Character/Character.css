@@ -8,5 +8,9 @@
 
 .character div {
     margin: 10px;
-    width: 100px;
+}
+
+.character img {
+    width:200px;
+    height:200px;
 }

@@ -10,11 +10,12 @@ import Display from '../../Display/Display';
 
 export default function Main() {
   const [head, setHead] = useState('');
+//head is the state variable and setHead is the setter function that will change that state 
 
   return (
     <main>
       <div className='left'>
-        <Controls setHead={setHead}/>
+        <Controls head={head} setHead={setHead}/>
         <Catch />
         <Display />
       </div>
@@ -22,5 +23,3 @@ export default function Main() {
     </main>
   );
 }
-
-

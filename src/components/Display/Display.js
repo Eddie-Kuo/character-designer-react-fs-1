@@ -4,6 +4,6 @@ import './Display.css';
 
 export default function Display() {
   return (
-    <div>Display</div>
+    <div className='display'>Display</div>
   );
 }
