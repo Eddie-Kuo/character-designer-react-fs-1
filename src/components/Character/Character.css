@@ -1,0 +1,16 @@
+.character {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.character div {
+    margin: -5px;
+}
+
+.character img {
+    width:200px;
+    height:200px;
+}

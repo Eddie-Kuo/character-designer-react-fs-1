@@ -1,0 +1,15 @@
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.controls * {
+    margin: 5px;
+}
+
+.controls select {
+    width: 200px;
+}
