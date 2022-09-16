@@ -12,9 +12,12 @@ export default function Main() {
 //head is the state variable and setHead is the setter function that will change that state
   const [middle, setMiddle] = useState('');
   const [bottom, setBottom] = useState('');
+
   const [headStats, setHeadStats] = useState(0);
   const [middleStats, setMiddleStats] = useState(0);
   const [bottomStats, setBottomStats] = useState(0);
+
+  const [catches, setCatches] = useState([]);
 
   const handleHeadIncrement = () => {
     setHeadStats((prevState) => prevState + 1);
@@ -28,8 +31,6 @@ export default function Main() {
     setBottomStats((prevState) => prevState + 1);
   };
 
-
-
   return (
     <main>
       <div className='left'>
@@ -39,8 +40,8 @@ export default function Main() {
           handleHeadIncrement={handleHeadIncrement} 
           handleMiddleIncrement={handleMiddleIncrement} 
           handleBottomIncrement={handleBottomIncrement} />
-        <Catch />
-        <Display headStats={headStats} middleStats={middleStats} bottomStats={bottomStats} />
+        <Catch catches={catches} setCatches={setCatches} />
+        <Display headStats={headStats} middleStats={middleStats} bottomStats={bottomStats} catches={catches} />
       </div>
       <Character head={head} middle={middle} bottom={bottom} />
     </main>

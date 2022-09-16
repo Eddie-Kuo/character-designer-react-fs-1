@@ -2,8 +2,16 @@ import React from 'react';
 
 import './Display.css';
 
-export default function Display({ headStats, middleStats, bottomStats }) {
+export default function Display({ headStats, middleStats, bottomStats, catches }) {
   return (
-    <div className='display'>Head was changed {`${headStats}`} times, body was changed {`${middleStats}`} times, and bottom was changed {`${bottomStats}`} times </div>
+    <fragment className='display'>
+      <div>Head was changed {`${headStats}`} times, body was changed {`${middleStats}`} times, and bottom was changed {`${bottomStats}`} times </div>
+      <p>Past Catchphrases:</p>
+      <ul>
+        {catches.map((catch) => (
+          <li key={catch}>{catch}</li>
+        ))}
+      </ul>
+    </fragment>
   );
 }
