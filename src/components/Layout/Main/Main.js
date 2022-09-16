@@ -12,13 +12,35 @@ export default function Main() {
 //head is the state variable and setHead is the setter function that will change that state
   const [middle, setMiddle] = useState('');
   const [bottom, setBottom] = useState('');
+  const [headStats, setHeadStats] = useState(0);
+  const [middleStats, setMiddleStats] = useState(0);
+  const [bottomStats, setBottomStats] = useState(0);
+
+  const handleHeadIncrement = () => {
+    setHeadStats((prevState) => prevState + 1);
+  };
+
+  const handleMiddleIncrement = () => {
+    setMiddleStats((prevState) => prevState + 1);
+  };
+
+  const handleBottomIncrement = () => {
+    setBottomStats((prevState) => prevState + 1);
+  };
+
+
 
   return (
     <main>
       <div className='left'>
-        <Controls head={head} setHead={setHead} middle={middle} setMiddle={setMiddle} bottom={bottom} setBottom={setBottom} />
+        <Controls head={head} setHead={setHead} 
+          middle={middle} setMiddle={setMiddle} 
+          bottom={bottom} setBottom={setBottom} 
+          handleHeadIncrement={handleHeadIncrement} 
+          handleMiddleIncrement={handleMiddleIncrement} 
+          handleBottomIncrement={handleBottomIncrement} />
         <Catch />
-        <Display />
+        <Display headStats={headStats} middleStats={middleStats} bottomStats={bottomStats} />
       </div>
       <Character head={head} middle={middle} bottom={bottom} />
     </main>
