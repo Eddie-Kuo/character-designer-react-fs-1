@@ -11,7 +11,9 @@ export default function Character({ head, middle, bottom }) {
       <div>
         <img src={`${process.env.PUBLIC_URL}/images/${middle}-middle.png`} />
       </div>
-      <div>{bottom}Bottom</div>
+      <div>
+        <img src={`${process.env.PUBLIC_URL}/images/${bottom}-bottom.png`} />
+      </div>
     </div>
   );
 }
