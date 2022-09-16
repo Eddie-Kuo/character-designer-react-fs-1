@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Controls.css';
 
-export default function Controls({ head, setHead }) {
+export default function Controls({ head, setHead, middle, setMiddle }) {
   return (
     <div className='controls'>
       <label>Head</label>
@@ -15,10 +15,11 @@ export default function Controls({ head, setHead }) {
       </select>
 
       <label>Middle</label>
-      <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
+      <select value={middle} onChange={(e) => setMiddle(e.target.value)} >
+        <option value="blue">Blue</option>
+        <option value="pink">Pink</option>
+        <option value="white">White</option>
+        <option value="yellow">Yellow</option>
       </select>
 
       <label>Bottom</label>
